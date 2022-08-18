@@ -6,6 +6,8 @@ import {
 import { Menu } from "antd";
 import { Link } from "react-router-dom";
 
+import styles from "./sider.module.scss";
+
 const NavigationItems = [
   {
     key: "1",

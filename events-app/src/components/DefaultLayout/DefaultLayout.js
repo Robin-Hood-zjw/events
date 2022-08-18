@@ -3,7 +3,7 @@ import { Layout } from "antd";
 import { BrowserRouter } from "react-router-dom";
 
 import HeaderArea from "./Header/HeaderArea";
-import SliderArea from "./Slider/SliderArea";
+import SliderArea from "./Sider/SiderArea";
 import MainAreaRouters from "../MainArea/MainAreaRouters";
 
 const DefaultLayout = () => {
