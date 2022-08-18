@@ -1,0 +1,25 @@
+// $button: (
+//     color: #fff; background: rgb(101, 114, 255) ; margin: 10px; border-radius:
+//       10px; transition: color 0.2s;,
+//   )
+.header {
+  background: rgb(255, 255, 255);
+  display: flex;
+  padding: 0px 100px;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button {
+    // @include $button;
+
+    &:hover {
+      background: #fff;
+      color: rgb(101, 114, 255);
+    }
+  }
+}
