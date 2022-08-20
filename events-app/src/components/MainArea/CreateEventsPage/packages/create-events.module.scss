@@ -1,1 +1,8 @@
 @use "./mixin.module";
+
+.item-list {
+  @include mobile-portrait {
+  }
+  @include mobile-landscape {
+  }
+}

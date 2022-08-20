@@ -1,0 +1,5 @@
+@use "./mixin.module";
+.event-alignment {
+  display: flex;
+  flex-direction: column;
+}

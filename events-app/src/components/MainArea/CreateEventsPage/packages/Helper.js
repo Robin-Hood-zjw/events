@@ -49,9 +49,9 @@ export const EventsForm = () => {
             ]}
           >
             <Select allowClear>
-              <Option value="culture">Culture</Option>
-              <Option value="film">Film</Option>
-              <Option value="food">Food</Option>
+              <Option value="landmark">Landmark</Option>
+              <Option value="movie">Movie</Option>
+              <Option value="ceremony">Ceremony</Option>
               <Option value="music">Music</Option>
               <Option value="travel">Travel</Option>
             </Select>
