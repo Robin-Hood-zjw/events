@@ -2,9 +2,12 @@ import { List } from "antd";
 import React, { useEffect } from "react";
 
 import { renderListItem } from "./Helper";
+import { fetchEvents } from "../../../../redux/ActionCreators";
 
 const EventsArea = (date) => {
-  useEffect(() => {}, [date]);
+  useEffect(() => {
+    fetchEvents(date);
+  }, [date]);
 
   return (
     <List

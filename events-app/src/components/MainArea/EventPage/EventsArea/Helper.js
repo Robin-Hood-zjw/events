@@ -2,24 +2,7 @@ import React from "react";
 import { Avatar, List, Rate, Space } from "antd";
 import { MessageOutlined, LikeOutlined } from "@ant-design/icons";
 
-// export const retrieveImg = (event) => {
-//   switch (event.type) {
-//     case "culture":
-//         return <img width={} height={} src='../../../public/images/' alt="culture" />
-//     case 'film':
-//         return <img width={} height={} src='../../../public/images/' alt="film" />
-//     case "food":
-//         return <img width={} height={} src='../../../public/images/' alt="food" />
-//     case 'music':
-//         return <img width={} height={} src='../../../public/images/' alt="music" />
-//     case 'travel':
-//         return <img width={} height={} src='../../../public/images/' alt="travel" />
-//     default:
-//         return null;
-//   }
-// };
-
-export const calcAverageRate = (data) =>
+const calcAverageRate = (data) =>
   data.map((info) => info.rating).reduce((total, rating) => total + rating, 0) /
   data.length;
 
@@ -29,6 +12,58 @@ const iconInfo = ({ icon, text }) => (
     {text}
   </Space>
 );
+
+const retrieveImg = (event) => {
+  switch (event.type) {
+    case "celebration":
+      return (
+        <img
+          width={200}
+          height={150}
+          src="../../../public/images/celebration.jpeg"
+          alt="celebration"
+        />
+      );
+    case "movie":
+      return (
+        <img
+          width={200}
+          height={150}
+          src="../../../public/images/movie.jpeg"
+          alt="movie"
+        />
+      );
+    case "ceremony":
+      return (
+        <img
+          width={200}
+          height={150}
+          src="../../../public/images/ceremony.jpeg"
+          alt="ceremony"
+        />
+      );
+    case "landmark":
+      return (
+        <img
+          width={200}
+          height={150}
+          src="../../../public/images/landmark.jpeg"
+          alt="landmark"
+        />
+      );
+    case "travel":
+      return (
+        <img
+          width={200}
+          height={150}
+          src="../../../public/images/"
+          alt="travel"
+        />
+      );
+    default:
+      return null;
+  }
+};
 
 export const renderListItem = (item) => {
   return (
@@ -43,7 +78,7 @@ export const renderListItem = (item) => {
         iconInfo(LikeOutlined, "200"),
         iconInfo(MessageOutlined, "300"),
       ]}
-      extra={item.picture}
+      extra={retrieveImg(item)}
     >
       <List.Item.Meta
         title={item.title}
