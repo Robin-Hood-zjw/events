@@ -1,7 +1,7 @@
 import { Button } from "antd";
 import React, { useState } from "react";
 
-import LoginModalContent from "./LoginModalContent";
+import LoginModalContent from "./LoginModal";
 
 const LoginButtonComponent = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
