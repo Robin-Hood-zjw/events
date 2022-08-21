@@ -5,6 +5,7 @@ import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import styles from "./package/header.module.scss";
 import LoginButton from "./package/LoginModal/LoginButton";
 import SignupButton from "./package/SignupModal/SignupButton";
+import setSiderBar from "../../../redux/SiderBar/ActionCreator";
 
 const HeaderArea = (collapse, toggle) => {
   return (
@@ -15,6 +16,7 @@ const HeaderArea = (collapse, toggle) => {
           onClick: () => toggle,
         })}
       </div>
+
       <div className={styles.header_buttons}>
         <LoginButton className={styles.button} />
         <SignupButton className={styles.button} />

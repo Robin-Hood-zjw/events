@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { Avatar, List, Rate, Space } from "antd";
+import { useDispatch, useSelector } from "react-redux";
 import { MessageOutlined, LikeOutlined } from "@ant-design/icons";
 
+import { fetchData } from "../packages/FetchData";
 import { calcAverageRate, iconInfo, retrieveImg } from "./Helper";
-import { fetchEvents } from "../../../../redux/ActionCreators";
-import { useSelector } from "react-redux";
+import { fetchEvents } from "../../../../redux/EventPage/ActionCreators";
 
 const renderListItem = (item) => {
   <List.Item
@@ -31,6 +32,7 @@ const renderListItem = (item) => {
 const EventsArea = (date) => {
   const products = useSelector((state) => state);
   console.log(products);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     fetchEvents(date);
@@ -40,7 +42,7 @@ const EventsArea = (date) => {
     <List
       size="large"
       itemLayout="vertical"
-      // dataSource={data}
+      dataSource={data}
       pagination={{ pageSize: 3 }}
       footer={<>Let's meet up!</>}
       renderItem={(item) => renderListItem(item)}

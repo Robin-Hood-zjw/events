@@ -1,0 +1,7 @@
+const ActionTypes = {
+  FETCH_EVENTS: "FETCH_EVENTS",
+  SUCCESS_FETCH_EVENTS: "SUCCESS_FETCH_EVENTS",
+  FAIL_FETCH_EVENTS: "FAIL_FETCH_EVENTS",
+};
+
+export default ActionTypes;

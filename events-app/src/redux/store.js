@@ -1,9 +1,9 @@
 import { legacy_createStore as createStore } from "redux";
 
-import { eventReducer } from "./redux/reducers";
+import comboReducers from "./comboReducers";
 
 const store = createStore(
-  eventReducer,
+  comboReducers,
   {},
   window.__REDUX_DEVTOOLS_EXTENSION__ /
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__

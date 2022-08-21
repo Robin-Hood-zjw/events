@@ -1,7 +1,7 @@
 import { Button } from "antd";
 import React, { useState } from "react";
 
-import SignipModalContent from "./SignipModalContent";
+import SignipModalContent from "./SignipModal";
 
 const SignupButtonComponent = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
