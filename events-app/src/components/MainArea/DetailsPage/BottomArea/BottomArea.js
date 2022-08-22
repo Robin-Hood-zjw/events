@@ -1,13 +1,14 @@
 import React from "react";
 
+import Comments from "./Comments";
+
 const BottomArea = () => {
   return (
     <div>
       <Card title="Chat about this event">
         <div>
-          <p>{} replies</p>
+          <Comments />
         </div>
-        <div>{}</div>
       </Card>
     </div>
   );
