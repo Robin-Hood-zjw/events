@@ -42,7 +42,8 @@ const EventsArea = (date) => {
     <List
       size="large"
       itemLayout="vertical"
-      dataSource={data}
+      // need data later
+      // dataSource={data ? data : []}
       pagination={{ pageSize: 3 }}
       footer={<>Let's meet up!</>}
       renderItem={(item) => renderListItem(item)}

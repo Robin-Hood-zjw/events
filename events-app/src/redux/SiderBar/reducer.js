@@ -4,7 +4,7 @@ const initialState = {
   status: "",
 };
 
-const SiderBarReducer = (state = initialState, { type, payload }) => {
+export const SiderBarReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case SET_SIDER_BAR:
       return {
@@ -15,5 +15,3 @@ const SiderBarReducer = (state = initialState, { type, payload }) => {
       return state;
   }
 };
-
-export default SiderBarReducer;
