@@ -4,6 +4,7 @@ import React from "react";
 import TitleArea from "./TitleArea/TitleArea";
 import BodyArea from "./BodyArea/BodyArea";
 import HostArea from "./HostArea/HostArea";
+import BottomArea from "./BottomArea/BottomArea";
 
 const DetailsPage = () => {
   return (
@@ -16,6 +17,10 @@ const DetailsPage = () => {
 
           <div>
             <BodyArea />
+          </div>
+
+          <div>
+            <BottomArea />
           </div>
         </Col>
 

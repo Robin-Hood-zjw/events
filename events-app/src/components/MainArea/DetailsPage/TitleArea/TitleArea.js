@@ -1,8 +1,9 @@
 import React from "react";
-import { Button, Modal } from "antd";
+import { Button, Card, Modal } from "antd";
+import { useState } from "react";
 
 const TitleArea = () => {
-  onJoinEvent = () => {
+  const onJoinEvent = () => {
     Modal.confirm({
       title: "Do you want to join this event?",
       okText: "Comfirm",
@@ -15,21 +16,23 @@ const TitleArea = () => {
 
   return (
     <div>
-      <section>
-        <h5>{}</h5>
-        <p>{}</p>
-        <p>Host by {}</p>
-      </section>
+      <Card>
+        <section>
+          <h5>{}</h5>
+          <p>{}</p>
+          <p>Host by {}</p>
+        </section>
 
-      <section>
-        <Button type="primaty" onClick={onJoinEvent}>
-          JOIN THIS EVENT
-        </Button>
+        <section>
+          <Button type="primaty" onClick={onJoinEvent}>
+            JOIN THIS EVENT
+          </Button>
 
-        <Button type="primaty" onClick={onRateEvent}>
-          RATE THIS EVENT
-        </Button>
-      </section>
+          <Button type="primaty" onClick={onRateEvent}>
+            RATE THIS EVENT
+          </Button>
+        </section>
+      </Card>
     </div>
   );
 };
