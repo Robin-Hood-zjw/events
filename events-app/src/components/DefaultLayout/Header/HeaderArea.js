@@ -4,8 +4,8 @@ import { Header } from "antd/lib/layout/layout";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 
 import styles from "./package/header.module.scss";
-import LoginButton from "./package/LoginModal/LoginButton";
-import SignupButton from "./package/SignupModal/SignupButton";
+import LoginButton from "../../PopUp/LogIn/LogIn";
+import SignupButton from "../../PopUp/SignUp/SignUp";
 import setSiderBar from "../../../redux/SiderBar/ActionCreator";
 
 const HeaderArea = (collapse, toggle) => {
