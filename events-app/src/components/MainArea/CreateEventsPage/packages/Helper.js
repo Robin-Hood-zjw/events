@@ -1,4 +1,5 @@
 import React from "react";
+import "antd/dist/antd.css";
 import TextArea from "antd/lib/input/TextArea";
 import { Button, Col, DatePicker, Form, Input, Row, Select } from "antd";
 

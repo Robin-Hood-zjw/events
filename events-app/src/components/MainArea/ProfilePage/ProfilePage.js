@@ -1,4 +1,5 @@
 import React from "react";
+import "antd/dist/antd.css";
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Card, Col, Divider, Row, Table } from "antd";
 

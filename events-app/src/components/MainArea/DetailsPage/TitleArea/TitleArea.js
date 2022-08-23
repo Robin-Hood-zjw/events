@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, Card, Modal } from "antd";
+import "antd/dist/antd.css";
 import { useState } from "react";
+import { Button, Card, Modal } from "antd";
 
 const TitleArea = () => {
   const onJoinEvent = () => {

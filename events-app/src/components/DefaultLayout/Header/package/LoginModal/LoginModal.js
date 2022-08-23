@@ -1,4 +1,5 @@
 import React from "react";
+import "antd/dist/antd.css";
 import { Button, DatePicker, Form, Input, Modal, Select } from "antd";
 
 const { TextArea } = Input;

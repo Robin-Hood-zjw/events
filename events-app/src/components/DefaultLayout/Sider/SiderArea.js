@@ -1,4 +1,5 @@
 import React from "react";
+import "antd/dist/antd.css";
 import { Menu, Slider, Image } from "antd";
 
 import styles from "./package/sider.module.scss";

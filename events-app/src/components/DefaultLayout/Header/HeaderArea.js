@@ -1,4 +1,5 @@
 import React from "react";
+import "antd/dist/antd.css";
 import { Header } from "antd/lib/layout/layout";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 

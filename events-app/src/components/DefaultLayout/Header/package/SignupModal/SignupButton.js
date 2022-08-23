@@ -1,4 +1,5 @@
 import { Button } from "antd";
+import "antd/dist/antd.css";
 import React, { useState } from "react";
 
 import SignipModalContent from "./SignipModal";

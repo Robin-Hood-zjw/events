@@ -1,3 +1,4 @@
+import "antd/dist/antd.css";
 import React, { useEffect } from "react";
 import { Avatar, List, Rate, Space } from "antd";
 import { useDispatch, useSelector } from "react-redux";

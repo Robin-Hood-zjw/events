@@ -1,4 +1,5 @@
 import React from "react";
+import "antd/dist/antd.css";
 import { Pagination } from "antd";
 
 const PaginationArea = () => {

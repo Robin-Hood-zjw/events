@@ -3,8 +3,9 @@ import {
   CompassOutlined,
   InfoOutlined,
 } from "@ant-design/icons";
-import { Button, Card } from "antd";
 import moment from "moment";
+import "antd/dist/antd.css";
+import { Button, Card } from "antd";
 import React, { useState } from "react";
 
 const BodyArea = () => {

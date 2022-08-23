@@ -1,4 +1,5 @@
 import React from "react";
+import "antd/dist/antd.css";
 import { Space } from "antd";
 
 export const calcAverageRate = (data) =>

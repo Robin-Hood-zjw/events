@@ -1,5 +1,6 @@
-import { Col, Row } from "antd";
 import React from "react";
+import "antd/dist/antd.css";
+import { Col, Row } from "antd";
 
 import TitleArea from "./TitleArea/TitleArea";
 import BodyArea from "./BodyArea/BodyArea";

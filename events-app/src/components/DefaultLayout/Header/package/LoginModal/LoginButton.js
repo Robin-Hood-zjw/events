@@ -1,3 +1,4 @@
+import "antd/dist/antd.css";
 import { Button } from "antd";
 import React, { useState } from "react";
 

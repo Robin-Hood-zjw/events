@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 import { Layout } from "antd";
+import "antd/dist/antd.css";
+import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import HeaderArea from "./Header/HeaderArea";

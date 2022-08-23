@@ -1,4 +1,5 @@
 import moment from "moment";
+import "antd/dist/antd.css";
 import { Row, Col, Calendar } from "antd";
 import React, { useEffect, useState } from "react";
 

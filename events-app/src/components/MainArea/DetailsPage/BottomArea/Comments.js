@@ -1,6 +1,7 @@
-import { List, Comment } from "antd";
 import moment from "moment";
 import React from "react";
+import "antd/dist/antd.css";
+import { List, Comment } from "antd";
 
 const Comments = ({ data }) => {
   return (
